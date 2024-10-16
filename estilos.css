@@ -1,0 +1,938 @@
+* {
+    box-sizing: border-box;
+
+}
+  
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+p {
+    font-size: 1.25em;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Version Mobile*/
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #1f9c4d;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.whatsapp-float img {
+    width: 90px;
+    height: 90px;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #8f8f8f;
+    box-shadow: 2px 2px 10px #8f8f8f;
+    color: #2e1e00;
+    background-color: #9c7a3a;
+    outline: none;
+}
+
+button:hover {
+    background-color: #9c7a3a;
+    color: white;
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: #664200;
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:rgb(185, 129, 39);
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: rgb(255, 185, 73);
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header a:hover {
+    color: rgb(255, 255, 255);
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    )
+    ,url("img/portada1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#hero h1 {
+    color: white;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#hero h2 {
+    color: white;
+}
+
+
+/*Quienes-Somos*/
+#quienes-somos .container {
+    text-align: center;
+    padding: 100px 12px;
+    background-color: rgb(255, 247, 228);
+    font-weight: bold;
+}
+
+#quienes-somos .texto {
+    color: rgb(73, 40, 2);
+}
+
+#quienes-somos .container1 {
+    text-align: center;
+    padding: 70px 12px;
+    background-color: rgb(115, 140, 155);
+}
+
+#quienes-somos .texto1 {
+    color: rgb(103, 103, 187);
+    font-weight: bold;
+}
+
+
+/*Actividades*/
+#actividades {
+    background-color: rgb(143, 121, 62);
+    color: white;
+    text-align: center;
+
+}
+
+#actividades .container {
+    padding: 150px 12px ;
+    
+   
+}
+
+#actividades h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+#actividades p {
+    display: none;
+    color: white;
+
+}
+
+#actividades .carta {
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 20px;
+    
+
+}
+
+#actividades .carta1 {
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 20px;
+    
+
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("img/cabalgatachicos.png");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("img/futbol.jpeg");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("img/pileta1.jpeg");
+}
+
+.carta1:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("img/huerta.jpeg");
+}
+
+.carta1:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("img/animales.jpeg");
+}
+
+.carta1:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("img/oracion.jpg");
+}
+
+
+
+/*Obras*/
+
+#obras .container{
+    
+    padding: 100px 12px ;
+    background-color: rgb(230, 230, 230);
+    
+}
+
+#obras h2 {
+    text-align: center;
+    color: rgb(66, 49, 0);
+    margin-top: 0;
+    font-size: 2em;
+} 
+
+#obras h3 {
+    text-align: center;
+    color: rgb(66, 49, 0);
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.imagen-port{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 10px;
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(0, 0, 27, 0.554);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+    text-align: center;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+
+/*Contacto*/
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 46);
+    color: white;
+    height: 80vh;
+    width: 100%;
+    padding: 100px 50px 100px 50px;
+}
+
+#contacto h2 {
+    font-size: 2em;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+#contacto h3 {
+    font-size: 1.5em;
+    color: rgb(163, 87, 0);
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+#contacto .container {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contacto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px;
+}
+
+
+/*Mapa*/
+
+#mapa {
+    padding: 150px 50px 150px 50px;
+    background-color: rgb(115, 140, 155);
+}
+
+#mapa .mapa-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#mapa .map {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500;
+    width: 250;
+}
+#mapa h2 {
+    margin: 5px;
+    font-size: 2em;
+    text-align: center;
+}
+
+/*Encuentros*/
+
+#encuentros .container {
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Mantiene las imágenes en una sola línea */
+    padding: 50px;
+    background-color: #684f23;
+}
+
+#encuentros h2 {
+    text-align: center;
+    color: #fff;
+    position:static;
+    margin-top: 30px;
+    font-size: 3em;
+}
+  
+.galeria-encuentros {
+    display: inline-flex;
+}
+  
+.galeria-encuentros img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    height: 250px; /* Mantiene la relación de aspecto de la imagen */
+    margin-right: 10px; /* Espacio entre las imágenes */
+    margin-bottom: 0px;
+}
+
+/*Video*/
+
+#video .video-container{
+    padding: 100px 100px;
+    background-color:#a37d3b;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+#video .vid{
+    margin-right: 5px;
+    margin-top: 5px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width:360; 
+    height:100;
+    
+}
+
+
+
+
+/*Footer*/
+footer {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 60px;
+}
+
+footer p {
+    margin: 0px;
+    color: white;
+    padding: 0px;
+}
+
+footer .container {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+footer .container1 {
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+
+
+/*Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+Version Desktop
+*/
+
+
+
+
+@media (min-width: 780px) {
+
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #1f9c4d;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 24px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    
+    .whatsapp-float img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 4.5em;
+    }
+
+    
+    /*Quienes-Somos*/
+    #quienes-somos .container {
+        display: flex;
+        justify-content: space-evenly;
+
+
+    }
+
+    #quienes-somos .texto {
+        text-align: initial;
+        padding-left: 30px;
+        width: 50%;
+        max-width: 600px;
+        padding: 0px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #quienes-somos h2 {
+        margin-top: 0px;
+    }
+
+    #quienes-somos .img-container {
+        background-image: url("img/logo-vivir-plenamente\(1\).png");
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 400px;
+
+    }
+
+    /*Actividades*/
+    #actividades .actividades {
+        display: flex;
+        justify-content: center;
+    }
+
+    #actividades .actividades1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #actividades p {
+        display: block;
+       
+    }
+
+    #actividades .carta {
+        
+        padding: 60px ;
+        background-size: 100% 200px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(0, 0, 27);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+        
+    }
+
+    #actividades .carta1 {
+        
+        padding: 60px ;
+        background-size: 100% 200px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(0, 0, 27);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+        
+    }
+
+    #actividades h3 {
+        margin-top: 30px;
+    }
+
+    .carta:first-child {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        )
+        ,url("img/Diseño\ sin\ título\(2\).png");
+    }
+    
+    .carta:nth-child(2) {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        )
+        ,url("img/futbol.jpeg");
+    }
+    
+    .carta:nth-child(3) {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        )
+        ,url("img/pileta1.jpeg");
+    }
+    
+    .carta1:first-child {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        )
+        ,url("img/huerta.jpeg");
+    }
+    
+    .carta1:nth-child(2) {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        )
+        ,url("img/animales1.jpeg");
+    }
+    
+    .carta1:nth-child(3) {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        )
+        ,url("img/oracion.jpg");
+    }
+
+
+    /*Obras*/
+    #obras .container{
+        padding: 100px 12px ;
+        background-color: rgb(192, 187, 138);
+    }
+
+
+    #obras h3 {
+        margin-top: 30px;
+        text-align: center;
+        color: rgb(70, 45, 0)
+    }
+
+    .galeria-port{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap; 
+    }
+
+    .imagen-port{
+        width: 315px;
+        height: 200px;
+        margin:5px 5px 5px 5px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+        border: none;
+        
+    }
+
+    .imagen-port > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .hover-galeria{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform: scale(0);
+        background: rgba(0, 0, 27, 0.554);
+        transition: transform .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hover-galeria img{
+        width: 50px;
+        height: auto;
+    }
+
+    .hover-galeria p{
+        color: #fff;
+        text-align: center;
+    }
+
+    .imagen-port:hover .hover-galeria{
+        transform: scale(1);
+    }
+
+    /*Encuentros*/
+
+    #encuentros .container {
+        overflow-x: auto; /* Permite el desplazamiento horizontal */
+        white-space: nowrap; /* Mantiene las imágenes en una sola línea */
+        padding: 50px;
+        background-color: #684f23;
+    }
+
+    #encuentros h2 {
+        text-align: center;
+        color: #fff;
+        position:static;
+        margin-top: 30px;
+        font-size: 3em;
+    }
+      
+    .galeria-encuentros {
+        display: inline-flex;
+    }
+      
+    .galeria-encuentros img {
+        max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+        height: 250px; /* Mantiene la relación de aspecto de la imagen */
+        margin-right: 10px; /* Espacio entre las imágenes */
+        margin-bottom: 0px;
+    }
+
+    /*Video*/
+
+    #video .video-container{
+        padding: 70px;
+        background-color:#a37d3b;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    #video .vid iframe{
+        margin: 0px;
+        display: inline-block;
+        flex-direction: column;
+        width:460px;
+        height:250px;
+    }
+
+    #video .vid {
+        margin: 0px;
+        display: inline-block;
+        flex-direction: column;
+    }
+
+    /*Contacto*/
+    #contacto {
+        padding: 30px 10px;
+        background-color: rgb(0, 0, 29);
+    }
+
+    #contacto .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contacto {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px;
+    }
+
+    #contacto h2 {
+        font-size: 50px;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contacto h3 {
+        font-size: 30px;
+        color: rgb(163, 87, 0);
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    /*Mapa*/
+
+    #mapa {
+        padding: 100px 50px;
+        background-color: rgb(115, 140, 155);
+    }
+
+    #mapa .mapa-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #mapa .map iframe{
+        width:560px;
+        height:415px;
+    }
+
+    #mapa h2 {
+        font-size: 3em;
+    }
+
+
+
+    /*Footer*/
+
+    footer {
+        padding: 20px 20px;
+    }
+
+    footer .container1 {
+        justify-content: flex-end;
+        display: flex;
+    }
+
+    footer .container {
+        justify-content: left;
+        display: flex;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas {
+        background-position-x: calc(100vh - 800px);
+    }
+} 

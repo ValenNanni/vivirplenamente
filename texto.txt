@@ -1,0 +1,15 @@
+<div class="container1">
+            <div class="texto1">
+                <p>La adicción se presenta como una opción, para un corazón necesitado y en dolor.
+                    Es por ello que vemos a la problemática de las adicciones, no sólo como una situación social familiar,
+                    sino como la intensa búsqueda individual del amor en lugares equivocados.
+                    Creemos que la sanidad y libertad solo llegará a través de relaciones sanas, con todos los aspectos de la vida:
+                    pasado, presente, futuro, relaciones, entorno...
+                </p>
+            </div>
+
+</div> 
+
+
+formulario de contacto
+https://forms.gle/mdfhFszfa3hvpwCg6
