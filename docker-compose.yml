@@ -1,0 +1,32 @@
+services:
+
+  web:
+    build: .
+    container_name: vivirplenamente_web
+
+    restart: always
+
+    networks:
+      - cloudflare
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+
+    container_name: cloudflared_tunnel
+
+    command: tunnel run
+
+    environment:
+      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
+
+    restart: always
+
+    depends_on:
+      - web
+
+    networks:
+      - cloudflare
+
+networks:
+  cloudflare:
+    driver: bridge
